@@ -1,0 +1,12 @@
+---
+- link: ./../dirs/dirs.html
+  title: Directories
+- graphs:
+  - link: ./../graphs/knowledge-graph-subdirs.html
+    title: Graph with Categories
+  - link: ./../graphs/knowledge-graph.html
+    title: Graph without Categories
+  link: ./../dirs/graphs.html
+  title: Graphs
+- link: ./../dirs/nodes.html
+  title: Nodes
