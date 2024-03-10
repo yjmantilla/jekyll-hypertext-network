@@ -21,5 +21,6 @@ Assumptions:
 - Each note has a unique title (not sure what happens if not...)
 - You may need to configure foam (e.g. path of images copied to assets) and the site (e.g. theme, etc).
 - Currently, it is better to download this as a zip and unzip to the root of your project. Then you can delete the .git folder and start your own repository. As GitHub does not allow to fork a repository into the same account.
+- Or use this repo as template.
 
 Preview: https://yjmantilla.github.io/jekyll-notetaking/
