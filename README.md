@@ -22,6 +22,6 @@ Assumptions:
 - No double square brackets in the text unless it is a reference.
 - Each note has a unique title (not sure what happens if not...)
 - Using [foam](https://github.com/foambubble/foam) is recommended but you may need to configure it (e.g. path of images copied to assets).
-- Currently, it is better to download this as a zip and unzip to the root of your project. Then you can delete the .git folder and start your own repository. As GitHub does not allow to fork a repository into the same account. Or use this repo as template.
+- Currently, it is better to use this repo as template. Or you may download this as a zip and unzip to the root of your project. Then you can delete the .git folder and use it in your own repository. Forking is not recommended as GitHub does not allow multiple forks of the same repository into the same account through their gui (rather you need to do it manually which is cumbersome).
 
 Preview: https://yjmantilla.github.io/jekyll-hypertext-network/
