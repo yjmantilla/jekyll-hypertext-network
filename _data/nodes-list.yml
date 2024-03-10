@@ -1,4 +1,6 @@
 ---
+- link: ./../nodes/example.html
+  title: Github Pages Example
 - link: ./../nodes/losenode.html
   title: losenode
 - link: ./../nodes/node1.html
