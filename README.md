@@ -23,4 +23,4 @@ Assumptions:
 - Currently, it is better to download this as a zip and unzip to the root of your project. Then you can delete the .git folder and start your own repository. As GitHub does not allow to fork a repository into the same account.
 - Or use this repo as template.
 
-Preview: https://yjmantilla.github.io/jekyll-notetaking/
+Preview: https://yjmantilla.github.io/jekyll-hypertext-network/
