@@ -4,7 +4,7 @@ title: README
 
 # README
 
-This is a base repository to make my flavor of a hypertext graph knowledge base system using Jekyll. The main feature is a custom management of references and custom graph generation.
+This is a base repository to make my flavor of an hypertext graph knowledge base system using Jekyll. The main feature is custom management of references and custom graph generation usable on the browser. All of this was inspired by [foam](https://github.com/foambubble/foam).
 
 Use gen_static_data.py to generate the static data for the site. This script will generate the data for the nodes and the graphs.
 You need Jekyll to run the site.
@@ -21,7 +21,7 @@ Assumptions:
 - Each note has its front matter with the title at least.
 - No double square brackets in the text unless it is a reference.
 - Each note has a unique title (not sure what happens if not...)
-- Using [foam](https://github.com/foambubble/foam) is recommended but you may need to configure it (e.g. path of images copied to assets).
+- Using the [paste image vscode extension](https://github.com/mushanshitiancai/vscode-paste-image) is recommended but you may need to configure it (e.g. path of images copied to assets, etc).
 - Currently, it is better to use this repo as template. Or you may download this as a zip and unzip to the root of your project. Then you can delete the .git folder and use it in your own repository. Forking is not recommended as GitHub does not allow multiple forks of the same repository into the same account through their gui (rather you need to do it manually which is cumbersome).
 
 Preview: https://yjmantilla.github.io/jekyll-hypertext-network/
