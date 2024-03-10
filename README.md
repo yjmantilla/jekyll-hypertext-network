@@ -11,6 +11,8 @@ You need Jekyll to run the site.
 
 You can create references to other notes using the ``(())`` where the parentheses are actually square brackets. The text inside the brackets is the filename of the note. If the note doesnt exist, it will be redirected to the stub.md file.
 
+Each new directory containing notes is a new "category", and should have a directory-name.md file in the dirs folder. The collect-stuff function in gen_static_data.py will generate the list of notes, so you can use it to generate the list of categories in that script.
+
 Assumptions:
 
 - each .md has a unique filename (even beyond different directories, /nodes/a.md and /a.md cannot happen).
