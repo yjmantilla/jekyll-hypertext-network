@@ -15,9 +15,9 @@ Each new directory containing notes is a new "category", and should have a direc
 
 Assumptions:
 
-- each .md has a unique filename (even beyond different directories, /nodes/a.md and /a.md cannot happen).
+- each .md has a unique filename (even beyond different directories, root/nodes/a.md and root/a.md cannot happen).
 - stub.md is the default file for a non-existing note.
-- No notes are beyond the first level of sub-directories. ./subdir/note.md is the deepest you can go.
+- No notes are beyond the first level of sub-directories. root/subdir/note.md is the deepest you can go.
 - Each note has its front matter with the title at least.
 - No double square brackets in the text unless it is a reference.
 - Each note has a unique title (not sure what happens if not...)
