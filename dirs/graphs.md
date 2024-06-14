@@ -1,7 +1,7 @@
 ---
 title: Graphs
 
-ignoreField_graphs: # way to ignore the filter for this attribute
+_graphs: # start with _ to ignore the filter for this attribute
   - link: ./../graphs/knowledge-graph-subdirs.html
     title: Graph with Categories
   - link: ./../graphs/knowledge-graph.html

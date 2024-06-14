@@ -153,7 +153,7 @@ function do_graph(path){
 
         Object.keys(fieldValues).forEach(field => {
             const values = Array.from(fieldValues[field]);
-            if (field.startsWith('ignoreField_')) {
+            if (field.startsWith('_')) {
                 "pass";
             }else
             {

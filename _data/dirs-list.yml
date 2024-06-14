@@ -1,7 +1,7 @@
 ---
 - link: ./../dirs/dirs.html
   title: Directories
-- ignoreField_graphs:
+- _graphs:
   - link: ./../graphs/knowledge-graph-subdirs.html
     title: Graph with Categories
   - link: ./../graphs/knowledge-graph.html
