@@ -19,7 +19,7 @@
             "url": "./../dirs/dirs",
             "category": "dirs",
             "title": "directories",
-            "content": "```yaml\n---\ntitle: Directories # you may put the course name here\n---\n```\n\n<ul>\n   {% for item in site.data.dirs-list%}\n      <li><a href=\"{{ item.link }}\">{{ item.title }}</a></li>\n   {% endfor %}\n</ul>\n"
+            "content": "```yaml\n---\ntitle: Directories # you may put the course name here\n---\n```\n\n<ul>\n   {% for item in site.data.dirs-list%}\n      <li><a href=\"{{ item._link }}\">{{ item.title }}</a></li>\n   {% endfor %}\n</ul>\n"
         },
         {
             "id": "graphs",

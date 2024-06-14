@@ -1,15 +1,15 @@
 ---
-- link: ./../nodes/example.html
+- _link: ./../nodes/example.html
   title: Github Pages Example
-- link: ./../nodes/losenode.html
+- _link: ./../nodes/losenode.html
   title: losenode
-- link: ./../nodes/many-words-node-search-text.html
+- _link: ./../nodes/many-words-node-search-text.html
   title: Many Words Node Search Text
-- link: ./../nodes/node1.html
+- _link: ./../nodes/node1.html
   title: Node1
-- link: ./../nodes/node2.html
+- _link: ./../nodes/node2.html
   title: Node 2
-- link: ./../nodes/stub.html
+- _link: ./../nodes/stub.html
   title: Stub
-- link: ./../nodes/words-search-text-node.html
+- _link: ./../nodes/words-search-text-node.html
   title: Words Search Text Node
