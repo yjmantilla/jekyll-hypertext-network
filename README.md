@@ -23,5 +23,6 @@ Assumptions:
 - Each note has a unique title (not sure what happens if not...)
 - Using the [paste image vscode extension](https://github.com/mushanshitiancai/vscode-paste-image) is recommended but you may need to configure it (e.g. path of images copied to assets, etc).
 - Currently, it is better to use this repo as template. Or you may download this as a zip and unzip to the root of your project. Then you can delete the .git folder and use it in your own repository. Forking is not recommended as GitHub does not allow multiple forks of the same repository into the same account through their gui (rather you need to do it manually which is cumbersome).
+- Might be worthwhile experimenting with dendron-like hierarchy (root.subdir.note.md). For example, people.john.md . Though the functionality might overlap with the category system and/or the tag system. Might be a way to impose hierarchy inside the nodes folder.
 
 Preview: https://yjmantilla.github.io/jekyll-hypertext-network/
