@@ -10,6 +10,6 @@ _graphs: # start with _ to ignore the filter for this attribute
 
 <ul>
    {% for item in page._graphs %}
-      <li><a href="{{ item.link }}">{{ item.title }}</a></li>
+      <li><a href="{{ item._link }}">{{ item.title }}</a></li>
    {% endfor %}
 </ul>
