@@ -2,9 +2,9 @@
 - _link: ./../dirs/dirs.html
   title: Directories
 - _graphs:
-  - link: ./../graphs/knowledge-graph-subdirs.html
+  - _link: ./../graphs/knowledge-graph-subdirs.html
     title: Graph with Categories
-  - link: ./../graphs/knowledge-graph.html
+  - _link: ./../graphs/knowledge-graph.html
     title: Graph without Categories
   _link: ./../dirs/graphs.html
   title: Graphs
