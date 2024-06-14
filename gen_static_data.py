@@ -233,7 +233,7 @@ with open('attributes.md', 'w',encoding='utf-8') as f:
         f.write(f'\n')
         for value in values:
             f.write(f'- {value}\n')
-
+        f.write('\n')
 # add the list of unique values to the graph
 graph_subs=collect_graph('./',out_extension=out_extension,output_path='graphs/graph-subdirs.json',ignore_in=ignore_in,ignore_eq=ignore_eq,subdirs=True)
 graph_nosubs=collect_graph('./',out_extension=out_extension,output_path='graphs/graph.json',ignore_in=ignore_in,ignore_eq=ignore_eq,subdirs=False)
