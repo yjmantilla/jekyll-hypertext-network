@@ -209,16 +209,21 @@ ignore_in = ['_site','_includes','.github','.vscode','docs','packages','README']
 ignore_eq = ['.','nodes']
 graph_subs=collect_graph('./',out_extension=out_extension,output_path='graphs/graph-subdirs.json',ignore_in=ignore_in,ignore_eq=ignore_eq,subdirs=True)
 
+
 # collect all attributes and unique values
 unique_values = {}
 ignored_attributes = ['content','url','id','title']
 for node in graph_subs['nodes']:
     for key, value in node.items():
-        if 'ignoreField' in key or key in ignored_attributes:
+        if '_' == key[0] or key in ignored_attributes:
             continue
         if key not in unique_values:
             unique_values[key] = []
-        if value not in unique_values[key]:
+        if isinstance(value, list):
+            for v in value:
+                if v not in unique_values[key]:
+                    unique_values[key]+=[v]
+        elif value not in unique_values[key]:
             unique_values[key]+=[value]
 
 # create markdown file with the list of unique values per attribute

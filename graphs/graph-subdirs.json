@@ -5,7 +5,7 @@
             "url": "./../attributes",
             "category": "root",
             "title": "attributes",
-            "content": "```yaml\n---\ntitle: Attributes\n---\n```\n\n## category\n\n- root\n- dirs\n- nodes\n\n## _graphs\n\n- [{'link': './../graphs/knowledge-graph-subdirs.html', 'title': 'Graph with Categories'}, {'link': './../graphs/knowledge-graph.html', 'title': 'Graph without Categories'}]\n\n"
+            "content": "```yaml\n---\ntitle: Attributes\n---\n```\n\n## category\n\n- root\n- dirs\n- nodes\n\n"
         },
         {
             "id": "README",
@@ -36,7 +36,7 @@
                     "title": "Graph without Categories"
                 }
             ],
-            "content": "```yaml\n---\ntitle: Graphs\n\n_graphs: # start with _ to ignore the filter for this attribute\n  - link: ./../graphs/knowledge-graph-subdirs.html\n    title: Graph with Categories\n  - link: ./../graphs/knowledge-graph.html\n    title: Graph without Categories\n---\n```\n\n<ul>\n   {% for item in page.ignoreFilter_graphs %}\n      <li><a href=\"{{ item.link }}\">{{ item.title }}</a></li>\n   {% endfor %}\n</ul>\n"
+            "content": "```yaml\n---\ntitle: Graphs\n\n_graphs: # start with _ to ignore the filter for this attribute\n  - link: ./../graphs/knowledge-graph-subdirs.html\n    title: Graph with Categories\n  - link: ./../graphs/knowledge-graph.html\n    title: Graph without Categories\n---\n```\n\n<ul>\n   {% for item in page._graphs %}\n      <li><a href=\"{{ item.link }}\">{{ item.title }}</a></li>\n   {% endfor %}\n</ul>\n"
         },
         {
             "id": "example",
