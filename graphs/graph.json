@@ -36,7 +36,7 @@
                     "title": "Graph without Categories"
                 }
             ],
-            "content": "```yaml\n---\ntitle: Graphs\n\n_graphs: # start with _ to ignore the filter for this attribute\n  - link: ./../graphs/knowledge-graph-subdirs.html\n    title: Graph with Categories\n  - link: ./../graphs/knowledge-graph.html\n    title: Graph without Categories\n---\n```\n\n<ul>\n   {% for item in page._graphs %}\n      <li><a href=\"{{ item.link }}\">{{ item.title }}</a></li>\n   {% endfor %}\n</ul>\n"
+            "content": "```yaml\n---\ntitle: Graphs\n\n_graphs: # start with _ to ignore the filter for this attribute\n  - link: ./../graphs/knowledge-graph-subdirs.html\n    title: Graph with Categories\n  - link: ./../graphs/knowledge-graph.html\n    title: Graph without Categories\n---\n```\n\n<ul>\n   {% for item in page._graphs %}\n      <li><a href=\"{{ item._link }}\">{{ item.title }}</a></li>\n   {% endfor %}\n</ul>\n"
         },
         {
             "id": "example",
@@ -108,5 +108,22 @@
             "source": "stub",
             "target": "unknownnode"
         }
+    ],
+    "unique_values": {
+        "category": [
+            "root",
+            "dirs",
+            "nodes"
+        ]
+    },
+    "ignored_attributes": [
+        "content",
+        "url",
+        "id",
+        "title"
+    ],
+    "ignored_substring": [
+        "_link",
+        "excalidraw-"
     ]
 }
