@@ -39,8 +39,8 @@ function do_graph(path){
       const settings = {enableTooltip: false};
       const uniqueCategories = new Set();
       const delimiter = '~';
-      const lowUnique=20;
-      const midUnique=50;
+      const lowUnique=10;
+      const midUnique=20;
       gui.add(settings, 'enableTooltip').name('Enable Preview');
 
         // Adding filter controls to GUI
@@ -90,7 +90,14 @@ function do_graph(path){
 
                   // For string filters (dropdowns and search boxes)
                   if (typeof filterSettings[setting] === 'string') {
-                      return filterSettings[setting] === '' || fieldValue.includes(filterSettings[setting]);
+                      if (filterSettings[setting] === '') {
+                          return true;
+                      }
+
+                      const searchWords = filterSettings[setting].toLowerCase().split(' ');
+                      const fieldValueLowerCase = fieldValue.toLowerCase();
+
+                      return searchWords.every(word => fieldValueLowerCase.includes(word));
                   }
 
                   // For toggle filters
