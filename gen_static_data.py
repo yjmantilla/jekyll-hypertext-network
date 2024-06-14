@@ -208,7 +208,37 @@ out_extension=''
 ignore_in = ['_site','_includes','.github','.vscode','docs','packages','README']
 ignore_eq = ['.','nodes']
 graph_subs=collect_graph('./',out_extension=out_extension,output_path='graphs/graph-subdirs.json',ignore_in=ignore_in,ignore_eq=ignore_eq,subdirs=True)
+
+# collect all attributes and unique values
+unique_values = {}
+ignored_attributes = ['content','url','id','title']
+for node in graph_subs['nodes']:
+    for key, value in node.items():
+        if 'ignoreField' in key or key in ignored_attributes:
+            continue
+        if key not in unique_values:
+            unique_values[key] = []
+        if value not in unique_values[key]:
+            unique_values[key]+=[value]
+
+# create markdown file with the list of unique values per attribute
+with open('attributes.md', 'w',encoding='utf-8') as f:
+    # add yaml front matter
+    f.write('---\n')
+    f.write('title: Attributes\n')
+    f.write('---\n')
+    f.write('\n')
+    for attribute, values in unique_values.items():
+        f.write(f'## {attribute}\n')
+        f.write(f'\n')
+        for value in values:
+            f.write(f'- {value}\n')
+
+# add the list of unique values to the graph
+graph_subs=collect_graph('./',out_extension=out_extension,output_path='graphs/graph-subdirs.json',ignore_in=ignore_in,ignore_eq=ignore_eq,subdirs=True)
 graph_nosubs=collect_graph('./',out_extension=out_extension,output_path='graphs/graph.json',ignore_in=ignore_in,ignore_eq=ignore_eq,subdirs=False)
+
+
 generate_link_reference_definitions('./',graph_nosubs,only_clean=True,ignore_in=ignore_in,ignore_eq=ignore_eq)
 generate_link_reference_definitions('./',graph_nosubs,only_clean=False,ignore_in=ignore_in,ignore_eq=ignore_eq)
 # Devise a method to extract references without a file (in the graphs they are the ones that link to the stub article)

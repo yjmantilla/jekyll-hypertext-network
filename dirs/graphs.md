@@ -1,7 +1,7 @@
 ---
 title: Graphs
 
-graphs:
+ignoreField_graphs: # way to ignore the filter for this attribute
   - link: ./../graphs/knowledge-graph-subdirs.html
     title: Graph with Categories
   - link: ./../graphs/knowledge-graph.html
@@ -9,7 +9,7 @@ graphs:
 ---
 
 <ul>
-   {% for item in page.graphs %}
+   {% for item in page.ignoreFilter_graphs %}
       <li><a href="{{ item.link }}">{{ item.title }}</a></li>
    {% endfor %}
 </ul>
