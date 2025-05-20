@@ -5,6 +5,8 @@
   title: losenode
 - _link: ./../nodes/many-words-node-search-text.html
   title: Many Words Node Search Text
+- _link: ./../nodes/node-with-drawing.html
+  title: Node with Drawing
 - _link: ./../nodes/node1.html
   title: Node1
 - _link: ./../nodes/node2.html

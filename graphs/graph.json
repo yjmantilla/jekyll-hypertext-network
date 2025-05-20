@@ -53,6 +53,13 @@
             "content": "```yaml\n---\ntitle: \"Many Words Node Search Text\"\n---\n```\n\nblablabla"
         },
         {
+            "id": "node-with-drawing",
+            "url": "./../nodes/node-with-drawing",
+            "category": "nodes",
+            "title": "node with drawing",
+            "content": "```yaml\n---\ntitle: Node with Drawing\n---\n```\n\n![Example Excalidraw SVG](/assets/drawingExample.excalidraw.svg)"
+        },
+        {
             "id": "node1",
             "url": "./../nodes/node1",
             "category": "nodes",
