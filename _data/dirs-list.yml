@@ -1,6 +1,4 @@
 ---
-- _link: ./../dirs/dirs.html
-  title: Directories
 - _graphs:
   - _link: ./../graphs/knowledge-graph-subdirs.html
     title: Graph with Categories

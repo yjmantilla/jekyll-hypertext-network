@@ -20,4 +20,4 @@ ontology_only_ignore : ['content','title','id','url']
 
 collect_stuff:
   - ['nodes', '.md']
-  - ['dirs', '.md']
+  - ['dirs', '.md',['dirs']]
