@@ -48,6 +48,10 @@ Content goes here. Link to another note with [[other-note-filename]].
 - If the referenced file does not exist, the link points to `stub.md` instead.
 - Filenames must be **unique across the entire repo** (even across subdirectories).
 
+### Saving sources from the web
+
+[Obsidian Clipper](https://obsidian.md/clipper) can clip web pages as Markdown files directly into a folder. Point it at the `sources/` directory to save articles, pages, and excerpts as notes you can then link with `[[wikilinks]]`.
+
 ---
 
 ## Adding a new folder of notes
