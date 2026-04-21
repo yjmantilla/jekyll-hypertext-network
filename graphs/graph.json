@@ -13,6 +13,12 @@
             "title": "dirs"
         },
         {
+            "id": "double brackets",
+            "url": "./../notes/stub",
+            "category": "notes",
+            "title": "double brackets"
+        },
+        {
             "id": "example",
             "url": "./../notes/example",
             "category": "notes",
@@ -65,6 +71,12 @@
             "title": "node 2"
         },
         {
+            "id": "other-note-filename",
+            "url": "./../notes/stub",
+            "category": "notes",
+            "title": "other-note-filename"
+        },
+        {
             "id": "README",
             "url": "./../README",
             "category": "root",
@@ -99,6 +111,12 @@
             "title": "unknownnode"
         },
         {
+            "id": "wikilinks",
+            "url": "./../notes/stub",
+            "category": "notes",
+            "title": "wikilinks"
+        },
+        {
             "id": "Wikipedia",
             "url": "./../notes/stub",
             "category": "notes",
@@ -125,12 +143,48 @@
             "target": "unknownnode"
         },
         {
+            "source": "README",
+            "target": "double brackets"
+        },
+        {
+            "source": "README",
+            "target": "node1"
+        },
+        {
+            "source": "README",
+            "target": "other-note-filename"
+        },
+        {
+            "source": "README",
+            "target": "wikilinks"
+        },
+        {
+            "source": "README",
+            "target": "wikilinks"
+        },
+        {
+            "source": "README",
+            "target": "wikilinks"
+        },
+        {
             "source": "src-lorem-ipsum",
             "target": "Wikipedia"
         },
         {
             "source": "stub",
+            "target": "double brackets"
+        },
+        {
+            "source": "stub",
+            "target": "other-note-filename"
+        },
+        {
+            "source": "stub",
             "target": "unknownnode"
+        },
+        {
+            "source": "stub",
+            "target": "wikilinks"
         },
         {
             "source": "stub",
