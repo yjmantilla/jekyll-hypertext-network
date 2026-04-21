@@ -10,12 +10,12 @@
             "id": "dirs",
             "url": "./../dirs/dirs",
             "category": "dirs",
-            "title": "directories"
+            "title": "dirs"
         },
         {
             "id": "example",
-            "url": "./../nodes/example",
-            "category": "nodes",
+            "url": "./../notes/example",
+            "category": "notes",
             "title": "github pages example"
         },
         {
@@ -36,32 +36,32 @@
         },
         {
             "id": "losenode",
-            "url": "./../nodes/losenode",
-            "category": "nodes",
+            "url": "./../notes/losenode",
+            "category": "notes",
             "title": "losenode"
         },
         {
             "id": "many-words-node-search-text",
-            "url": "./../nodes/many-words-node-search-text",
-            "category": "nodes",
+            "url": "./../notes/many-words-node-search-text",
+            "category": "notes",
             "title": "many words node search text"
         },
         {
             "id": "node-with-drawing",
-            "url": "./../nodes/node-with-drawing",
-            "category": "nodes",
+            "url": "./../notes/node-with-drawing",
+            "category": "notes",
             "title": "node with drawing"
         },
         {
             "id": "node1",
-            "url": "./../nodes/node1",
-            "category": "nodes",
+            "url": "./../notes/node1",
+            "category": "notes",
             "title": "node1"
         },
         {
             "id": "node2",
-            "url": "./../nodes/node2",
-            "category": "nodes",
+            "url": "./../notes/node2",
+            "category": "notes",
             "title": "node 2"
         },
         {
@@ -71,21 +71,43 @@
             "title": "readme"
         },
         {
+            "id": "src-lorem-ipsum",
+            "url": "./../sources/src-lorem-ipsum",
+            "category": "sources",
+            "title": "lorem ipsum",
+            "source": "https://en.wikipedia.org/wiki/Lorem_ipsum",
+            "author": [
+                "[[Wikipedia]]"
+            ],
+            "published": "2003-03-01",
+            "created": "2026-04-21",
+            "description": null,
+            "tags": [
+                "clippings"
+            ]
+        },
+        {
             "id": "stub",
-            "url": "./../nodes/stub",
-            "category": "nodes",
+            "url": "./../notes/stub",
+            "category": "notes",
             "title": "stub"
         },
         {
             "id": "unknownnode",
-            "url": "./../nodes/stub",
-            "category": "nodes",
+            "url": "./../notes/stub",
+            "category": "notes",
             "title": "unknownnode"
         },
         {
+            "id": "Wikipedia",
+            "url": "./../notes/stub",
+            "category": "notes",
+            "title": "wikipedia"
+        },
+        {
             "id": "words-search-text-node",
-            "url": "./../nodes/words-search-text-node",
-            "category": "nodes",
+            "url": "./../notes/words-search-text-node",
+            "category": "notes",
             "title": "words search text node"
         }
     ],
@@ -93,6 +115,10 @@
         {
             "source": "attributes",
             "target": "dirs"
+        },
+        {
+            "source": "attributes",
+            "target": "Wikipedia"
         },
         {
             "source": "dirs",
@@ -115,15 +141,42 @@
             "target": "dirs"
         },
         {
+            "source": "src-lorem-ipsum",
+            "target": "Wikipedia"
+        },
+        {
             "source": "stub",
             "target": "unknownnode"
+        },
+        {
+            "source": "stub",
+            "target": "Wikipedia"
         }
     ],
     "unique_values": {
         "category": [
             "dirs",
-            "nodes",
-            "root"
+            "notes",
+            "root",
+            "sources"
+        ],
+        "source": [
+            "https://en.wikipedia.org/wiki/Lorem_ipsum"
+        ],
+        "author": [
+            "[[Wikipedia]]"
+        ],
+        "published": [
+            "2003-03-01"
+        ],
+        "created": [
+            "2026-04-21"
+        ],
+        "description": [
+            null
+        ],
+        "tags": [
+            "clippings"
         ]
     },
     "ignored_attributes": [
