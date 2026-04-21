@@ -24,12 +24,6 @@ def has_front_matter(lines):
         return False, []  # In case the end delimiter isn't found
     return False, []
 
-def format_content_with_front_matter(content, front_matter_lines):
-    """Format content by removing front matter and prepending it as a code block."""
-    content_lines = content.split('\n')
-    content_without_fm = '\n'.join(content_lines[len(front_matter_lines):])  # Remove front matter lines
-    front_matter_str = '```yaml\n' + ''.join(front_matter_lines) + '```\n'  # Format as code block
-    return front_matter_str + content_without_fm
 #%% bubbles
 #mypath = 'bubbles'
 #extension = '.md' # gotta filter by extension since assets may be in the folder (images ie)
@@ -107,7 +101,6 @@ def collect_graph(mypath,output_path='files\graph.json',extension='.md',out_exte
         try:
             with open(this_file, encoding='utf-8') as f:
                 data = f.readlines()
-                data2 = ''.join(data)
                 if data:
                     front_matter_exists, front_matter_lines = has_front_matter(data)
                     if front_matter_exists:
@@ -120,11 +113,9 @@ def collect_graph(mypath,output_path='files\graph.json',extension='.md',out_exte
                             node['title']=node['title'].lower() # make it more easy to search as search is case sensitive
                         else:
                             node['title'] = node['id'].lower()
-                        node['content'] = format_content_with_front_matter(data2, front_matter_lines).rstrip()
                     else:
                         print(node, 'has no front matter')
                         node['title'] = node['id'].lower()
-                        node['content'] = data2.rstrip()
         except Exception as e:
             print('Error processing file for node', node, 'at', this_file, ":", e)            #exit()
     # sort nodes and links by id
